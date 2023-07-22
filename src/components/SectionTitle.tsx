@@ -1,6 +1,3 @@
-import { kaushan } from "@/app/fonts";
-import React from "react";
-
 interface propsTypes {
   title: string;
   position: string;

@@ -1,22 +1,54 @@
 import Image from "next/image";
-import React from "react";
 import SectionTitle from "./SectionTitle";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
     <div className="about-section py-24">
       <div className="container mx-auto">
         <SectionTitle title="About Me" position="text-center" />
-        <div className="flex items-center">
+        <div className="flex items-center gap-x-20">
           <div className="image-part w-1/4">
             <Image
               src="/me.jpg"
               alt="Shahriyar Ahmed"
               width={250}
               height={250}
-              className="text-center rounded-full"
+              className="text-center rounded-full mx-auto border-8 border-slate-100"
             />
+            <div className="flex justify-center space-x-5 mt-10">
+              <Link
+                href="https://www.linkedin.com/in/theshahriyar/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faLinkedin} className="h-5" />
+              </Link>
+              <Link href="https://github.com/TheShahriyar" target="_blank">
+                <FontAwesomeIcon icon={faGithub} className="h-5" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/TheShahriyar"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faFacebookF} className="h-5" />
+              </Link>
+              <Link href="https://twitter.com/Shahriyar31dec" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} className="h-5" />
+              </Link>
+              <Link href="mailto:shahriyar.31dec@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} className="h-5" />
+              </Link>
+            </div>
           </div>
+
           <div className="details-part w-3/4">
             <div>
               <p className="mb-4">
@@ -51,7 +83,7 @@ const About = () => {
                   <li>LESS,</li>
                   <li>JavaScript,</li>
                   <li>TypeScript,</li>
-                  <li>React,</li>
+                  <li>React JS,</li>
                   <li>Next JS,</li>
                   <li>Gatsby JS,</li>
                   <li>Node,</li>
@@ -121,6 +153,21 @@ const About = () => {
                   <li>Asana</li>
                 </ul>
               </div>
+            </div>
+
+            <div className="mt-20 space-x-4">
+              <Link
+                href="#"
+                className="bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
+              >
+                HTML CSS Portfolio
+              </Link>
+              <Link
+                href="#"
+                className="bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
+              >
+                Gatsby JS Portfolio
+              </Link>
             </div>
           </div>
         </div>
