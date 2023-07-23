@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import handleScroll from "./handleScroll";
 
 const Banner = () => {
+  const handleScrolling = handleScroll;
+
   return (
     <div className="banner-section h-screen relative">
       <div className="relative h-full">
@@ -25,7 +29,8 @@ const Banner = () => {
             Front End Developer
           </h2>
           <Link
-            href="#"
+            href="#aboutSection"
+            onClick={handleScrolling}
             className="text-white bg-transparent text-xs uppercase border border-white rounded-sm py-3 px-12 transition-all duration-[400] hover:bg-primary hover:border-primary"
           >
             About me

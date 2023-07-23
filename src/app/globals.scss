@@ -18,7 +18,7 @@
 
 @layer components {
   body {
-    @apply text-secondary tracking-[0.5px] antialiased font-openSans;
+    @apply text-secondary tracking-[0.5px] antialiased font-openSans scroll-smooth;
   }
 
   .container {

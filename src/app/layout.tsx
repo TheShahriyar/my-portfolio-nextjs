@@ -14,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" className={`${kaushan.variable} ${openSans.variable}`}>
+      <html
+        lang="en"
+        className={`${kaushan.variable} ${openSans.variable} scroll-smooth`}
+      >
         <body>{children}</body>
       </html>
     </>

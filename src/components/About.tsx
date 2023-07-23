@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import Link from "next/link";
@@ -9,13 +10,15 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import handleScroll from "./handleScroll";
 
 const About = () => {
+  const handleScrolling = handleScroll;
   return (
-    <div className="about-section py-12 md:py-24">
+    <div id="aboutSection" className="about-section py-12 md:py-24">
       <div className="container mx-auto">
         <SectionTitle title="About Me" position="text-center" />
-        <div className="flex flex-col lg:flex-row items-center lg:gap-x-20 gap-y-8 lg:gap-y-0">
+        <div className="flex flex-col lg:flex-row lg:gap-x-20 gap-y-8 lg:gap-y-0">
           <div className="image-part lg:w-1/4">
             <Image
               src="/me.jpg"
@@ -158,15 +161,17 @@ const About = () => {
             <div className="mt-20 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
               <Link
                 href="#htmlCssPortfolio"
+                onClick={handleScrolling}
                 className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
               >
                 HTML CSS Portfolio
               </Link>
               <Link
-                href="#"
+                href="#GatsbyPortfolio"
+                onClick={handleScrolling}
                 className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
               >
-                Gatsby JS Portfolio
+                React Gatsby JS Portfolio
               </Link>
             </div>
           </div>
