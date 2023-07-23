@@ -12,11 +12,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div className="about-section py-24">
+    <div className="about-section py-12 md:py-24">
       <div className="container mx-auto">
         <SectionTitle title="About Me" position="text-center" />
-        <div className="flex items-center gap-x-20">
-          <div className="image-part w-1/4">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-x-20 gap-y-8 lg:gap-y-0">
+          <div className="image-part lg:w-1/4">
             <Image
               src="/me.jpg"
               alt="Shahriyar Ahmed"
@@ -49,7 +49,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="details-part w-3/4">
+          <div className="details-part lg:w-3/4">
             <div>
               <p className="mb-4">
                 {`I'm a Frontend Web Developer with 6+ years of experience. I'm an
@@ -72,7 +72,7 @@ const About = () => {
               stellar finished product.`}</p>
             </div>
             <div className="mt-8">
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   Programming Skills:
                 </h4>
@@ -91,7 +91,7 @@ const About = () => {
                   <li>jQuery</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   CSS Frameworks:
                 </h4>
@@ -102,7 +102,7 @@ const About = () => {
                   <li>Daisy UI</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   Database:
                 </h4>
@@ -112,7 +112,7 @@ const About = () => {
                   <li>GraphQL,</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   CMS:
                 </h4>
@@ -122,7 +122,7 @@ const About = () => {
                   <li>Contentful</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   Design Tools:
                 </h4>
@@ -132,7 +132,7 @@ const About = () => {
                   <li>Photoshop</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   Working Tools:
                 </h4>
@@ -142,7 +142,7 @@ const About = () => {
                   <li>Slack</li>
                 </ul>
               </div>
-              <div className="flex mb-4">
+              <div className="flex flex-col md:flex-row mb-4">
                 <h4 className="font-bold mr-3 underline whitespace-nowrap">
                   PM Tools:
                 </h4>
@@ -155,16 +155,16 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-20 space-x-4">
+            <div className="mt-20 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
               <Link
-                href="#"
-                className="bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
+                href="#htmlCssPortfolio"
+                className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
               >
                 HTML CSS Portfolio
               </Link>
               <Link
                 href="#"
-                className="bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
+                className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
               >
                 Gatsby JS Portfolio
               </Link>

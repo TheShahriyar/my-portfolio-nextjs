@@ -5,7 +5,7 @@ interface propsTypes {
 
 const SectionTitle = ({ title, position }: propsTypes) => {
   return (
-    <div className={`section-title ${position} mb-20`}>
+    <div className={`section-title ${position}`}>
       <h2 className={``}>{title}</h2>
     </div>
   );

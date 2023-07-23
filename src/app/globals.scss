@@ -18,18 +18,18 @@
 
 @layer components {
   body {
-    @apply text-secondary tracking-[0.5px] antialiased;
+    @apply text-secondary tracking-[0.5px] antialiased font-openSans;
   }
 
   .container {
-    @apply px-5;
+    @apply px-5 mx-auto;
   }
 
   .section-title {
-    @apply mb-20;
+    @apply mb-16 md:mb-20;
 
     h2 {
-      @apply relative text-4xl font-bold font-kausan;
+      @apply relative text-2xl md:text-4xl font-bold font-kausan;
 
       &::after {
         @apply absolute right-0 bottom-0 left-0 w-[40px] h-[1px] mx-auto -my-5 content-[''] bg-secondary;

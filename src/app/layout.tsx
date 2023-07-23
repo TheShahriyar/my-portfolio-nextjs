@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" className={`${kaushan.variable} ${openSans.variable}`}>
-        <body className={openSans.className}>{children}</body>
+        <body>{children}</body>
       </html>
     </>
   );
