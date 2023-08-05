@@ -140,6 +140,7 @@ const About = () => {
                   Working Tools:
                 </h4>
                 <ul className="flex flex-wrap space-x-4 text-red-600 italic">
+                  <li>Git, Github, GitLab,</li>
                   <li>VS Code,</li>
                   <li>Postman,</li>
                   <li>Slack</li>
@@ -165,6 +166,13 @@ const About = () => {
                 className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
               >
                 HTML CSS Portfolio
+              </Link>
+              <Link
+                href="#NextPortfolio"
+                onClick={handleScrolling}
+                className="inline-block text-center bg-primary py-4 px-10 rounded-sm text-white text-sm font-semibold"
+              >
+                NEXT JS Portfolio
               </Link>
               <Link
                 href="#GatsbyPortfolio"
