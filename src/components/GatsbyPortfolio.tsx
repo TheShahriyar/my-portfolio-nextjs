@@ -7,10 +7,7 @@ import OtheloImage from "../images/othelo-onepage.jpg";
 
 const GatsbyPortfolio = () => {
   return (
-    <div
-      id="GatsbyPortfolio"
-      className="portfolio-section bg-stone-50  py-12 md:py-20"
-    >
+    <div id="GatsbyPortfolio" className="portfolio-section  py-12 md:py-20">
       <div className="container">
         <SectionTitle title="React Gatsby Portfolio" position="text-center" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
