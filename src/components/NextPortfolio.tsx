@@ -28,7 +28,7 @@ const NextPortfolio = () => {
                   Github Repo
                 </Link>
                 <Link
-                  href="https://wave-website-nextjs-shahriyar.netlify.app/"
+                  href="https://wave-company-website-nextjs.vercel.app/"
                   target="_blank"
                   className="bg-primary px-4 py-2 text-white rounded-md font-semibold"
                 >
